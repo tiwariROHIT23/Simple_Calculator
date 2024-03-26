@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <p>CALCULATOR</p>
+        
+        <div class="child">
+
+            <table>
+                <tr>
+                    <td colspan="4"><input disabled  type="text" id="show" class="show"> </td>
+                </tr>
+                <tr>
+                    <td> <input type="button" value="AC" onclick="clr()" class="element" /> </td>
+                    <td><input type="button" value="mod" onclick="dis('%')" class="element"></td>
+                    <td><input type="button" value="&#10006" onclick="cancel()" class="element"></td>
+                    <td><input type="button" value="&#247" onclick="dis('/')" class="element"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="7" onclick="dis('7')" class="element"></td>
+                    <td><input type="button" value="8" onclick="dis('8')" class="element"></td>
+                    <td><input type="button" value="9" onclick="dis('9')" class="element"></td>
+                    <td><input type="button" value="&times" onclick="dis('*')" class="element"></td>
+                </tr>
+                <tr>
+                    <td> <input type="button" value="4" onclick="dis('4')" class="element"></td>
+                    <td> <input type="button" value="5" onclick="dis('5')" class="element"></td>
+                    <td> <input type="button" value="6" onclick="dis('6')" class="element"></td>
+                    <td><input type="button" value="-" onclick="dis('-')" class="element"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="1" onclick="dis('1')" class="element"></td>
+                    <td><input type="button" value="2" onclick="dis('2')" class="element"></td>
+                    <td><input type="button" value="3" onclick="dis('3')" class="element"></td>
+                    <td><input type="button" value="+" onclick="dis('+')" class="element"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="00" onclick="dis('00')" class="element"></td>
+                    <td> <input type="button" value="0" onclick="dis('0')" class="element"></td>
+                    <td><input type="button" value="." onclick="dis('.')" class="element"></td>
+                    <td> <input type="button" value="=" onclick="solve()" class="element" style="background-color: rgb(25, 51, 51);"></td>
+                </tr>
+                
+            </table>
+        </div>
+       
+
+    </div>
+    <script src="index.js"></script>
+   
+</body>
+</html>
